@@ -295,5 +295,12 @@ nav ul a {
         justify-content: start;
         margin-left: 2rem;
     }
+    .shield {
+        height: 21vh;
+        width: 50%;
+    }
+    .fact {
+        margin-top: 2rem;
+    }
     
 }
