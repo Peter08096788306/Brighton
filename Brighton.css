@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    height: 500vh;
+}
+
+.container {
+    background-color: #90953b;
+    position: sticky;
+    top: 0;
+}
+
+.Header {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo span {
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Menu {
+    width: 10%;
+    cursor: pointer;
+}
+
+.Menu img {
+    width: 70%;
+}
+
+nav {
+    text-align: center;
+    line-height: 2.5rem;
+    transition: all .3s linear;
+    display: none;
+}
+
+#list {
+    border-bottom: 2px solid yellow;
+    width: 20%;
+    margin: auto;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+
+nav ul a {
+    color: aliceblue;
+}
+
+#navbar.open {
+    display: block;
+    transition: all .3s linear;
+}
+
+.Head-color {
+    background: #78853F;
+    padding-bottom: 28rem;
+    position: relative;
+    z-index: -1;
+
+}
+
+.slider {
+    background-image: url(./image/slider-bg.jpg);
+    padding-bottom: 2rem;
+    width: 90%;
+    right: 5%;
+    position: absolute;
+    margin-left: 5rem;
+    background-position: 30% -100%;
+    z-index: 999;
+    top: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.inner h2 {
+    text-transform: uppercase;
+    color: yellow;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.inner h1 {
+    color: #ffff;
+    margin-top: 0.5rem;
+    font-size: 44px;
+}
+
+.inner p {
+    color: #ffff;
+    font-size: 17px;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    line-height: 1.6rem;
+}
+
+.Button-1 button {
+    padding: 1rem;
+    background: yellow;
+    font-size: 18px;
+    border: none;
+}
+
+.Button-2 button {
+    padding: 1rem;
+    font-size: 18px;
+    border: none;
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.control ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.control ul li {
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.Carousel {
+    overflow: hidden;
+}
+
+.Slide {
+    display: flex;
+    width: 400%;
+}
+
+.control ul li.selected {
+    background-color: transparent;
+    border: 3px solid gainsboro;
+
+}
+.offer {
+    /* position: relative; */
+    margin-top: 10rem;
+    padding-left: 1.5rem;
+}
+.offer p {
+    line-height: 1.4;
+}
+.shield {
+    background-color: whitesmoke;
+    width: 90%;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    height: 20vh;
+    text-align: center;
+}
+.shield img {
+    margin-top: 1.5rem;
+    width: 50%;
+}
+.safety {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+ .safety:hover .shield {
+    background: #78853F;
+}
+.fact {
+    margin-top: 0.2rem;
+}
+.fact p {
+    margin-top: 0.3rem;
+    width: 80%;
+    line-height: 1.5;
+}
+@media (min-width: 768px) {
+    .inner {
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+
+    .inner p {
+        width: 50%;
+        margin: 0;
+    }
+
+    .Button {
+        justify-content: start;
+    }
+
+    .Menu img {
+        width: 50%;
+    }
+
+    .control ul {
+        justify-content: start;
+        margin-left: 2rem;
+    }
+    .slider {
+        padding-bottom: 4rem;
+        background-position: 0% 0%;
+    }
+    .offer {
+        margin-top: 15rem;
+    }
+    .First {
+        display: flex;
+    }
+
+}
+@media (min-width: 1022px) {
+    .container {
+        background-color: #90953b;
+        padding-bottom: 0.5rem;
+    }
+    .Menu {
+        display: none;
+    }
+    .logo {
+        margin-left: 5rem;
+    }
+    nav {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -3rem;
+        gap: 3rem;
+        width: 90%;
+    }
+    #list {
+        border-bottom: 2px solid yellow;
+        width: 5%;
+        margin: 0;
+    }
+    .inner {
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+    .inner h2 {
+        text-transform: uppercase;
+        color: yellow;
+        font-size: 27px;
+        font-weight: 100;
+    }
+    
+    .inner h1 {
+        color: #ffff;
+        margin-top: 0.5rem;
+        font-size: 55px;
+    }
+    .inner p {
+        width: 40%;
+        margin: 0;
+        margin-top: 2rem;
+    }
+    .control ul {
+        justify-content: start;
+        margin-left: 2rem;
+    }
+    
+}
